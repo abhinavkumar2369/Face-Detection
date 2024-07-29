@@ -1,6 +1,7 @@
 import cv2
 import tkinter as tk
 from PIL import Image, ImageTk
+from tkinter import PhotoImage
 
 
 
@@ -20,6 +21,10 @@ def detect_faces(frame):
 
 
 
+# --------------------------------------------------
+
+
+
 def update_frame():
     ret, frame = cap.read()
     if ret:
@@ -34,9 +39,39 @@ def update_frame():
 
 
 
+
+# --------------------------------------------------
+
+
+
+
 # Initialize Tkinter window
 root = tk.Tk()
 root.title("Face Detection")
+root.resizable(0, 0)
+
+
+# --------------------------------------------------
+
+
+
+# Ensure High DPI awareness on Windows
+try:
+    from ctypes import windll
+    windll.shcore.SetProcessDpiAwareness(1)
+except:
+    pass
+
+
+
+# --------------------------------------------------
+
+
+
+logo = PhotoImage(file='logo.png')
+
+# Set the logo as the application icon
+root.iconphoto(False, logo)
 
 
 # Create a label and pack it into the window
@@ -44,12 +79,16 @@ label = tk.Label(root)
 label.pack()
 
 
+
+# --------------------------------------------------
+
+
+
 # Initialize video capture
 cap = cv2.VideoCapture(0)
 
 
 update_frame()
-
 root.mainloop()
 
 
