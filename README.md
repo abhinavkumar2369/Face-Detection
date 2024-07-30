@@ -41,7 +41,9 @@
 </div>
 
 
+
 <!------------------------------------------------->
+
 
 
 ## Overview 🌟
@@ -49,13 +51,19 @@
 - Face Detection program made using Python tkinkter, powered by Open CV
 
 
+
 <!------------------------------------------------->
+
 
 
 ## Screenshot 🖼️
 
+![image](https://github.com/user-attachments/assets/74f0f76d-9f16-49da-bb9f-82e3a5018711)
+
+
 
 <!------------------------------------------------->
+
 
 
 ## Installation ⚒️
@@ -72,7 +80,10 @@
    cd Python-Face-Detection
    ```
 
+
+
 <!------------------------------------------------->
+
 
 
 ## Usage 🤖
@@ -84,7 +95,9 @@
    ```
 
 
+
 <!------------------------------------------------->
+
 
 
 ## Attribution 🙏
@@ -92,7 +105,9 @@
 - Logo Image used in the Repository belong to the [SVG Repo](https://www.svgrepo.com/) Website.
 
 
+
 <!------------------------------------------------->
+
 
 
 ## Contributions 🧑‍💻
